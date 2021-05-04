@@ -1,0 +1,19 @@
+package com.springboot.serviceimpl;
+
+import com.springboot.classes.Demo;
+import com.springboot.service.demoservice;
+
+public class demoserviceimpl implements demoservice{
+
+	@Override
+	public String name(String name) {
+		// TODO Auto-generated method stub
+		
+		Demo d = new Demo();
+		return "ajith";
+	}
+
+	
+	
+	
+}

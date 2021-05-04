@@ -1,0 +1,30 @@
+package com.springboot.serviceimpl;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.springboot.classes.Demo;
+import com.springboot.repository.DemoRepo;
+import com.springboot.service.demoservice;
+
+import antlr.collections.List;
+
+public class demoserviceimpl implements demoservice{
+
+	
+	 @Autowired
+	 
+	 private DemoRepo demorep ;
+	@Override
+	public String name(String name) {
+		// TODO Auto-generated method stub
+		Demo d = new Demo();
+		List<d> findAll = demorep.findAll();
+		
+		
+		return "ajith";
+	}
+
+	
+	
+	
+}
